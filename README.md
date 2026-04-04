@@ -35,7 +35,7 @@ in feed rate and material properties.
   response analysis (§2.3)
 - **Smoothing Quality Disturbances** — smoothing composition variations using a buffer
   tank (§2.2)
-- **Generate Bounded Random Walk (BRW) Sequences** — generates stochastic feed rate sequence
+- **Generate Bounded Random Walk (BRW) Sequences** — generates stochastic disturbance inputs
 - **Mixed Tank Simulation** — simulation of a single tank with BRW disturbance
 - **Smoothing Flow Rate Disturbances** — surge tank model for smoothing flow rate
   variations (§2.1)
