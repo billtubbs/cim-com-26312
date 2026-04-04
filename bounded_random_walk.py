@@ -1,8 +1,6 @@
-# import numba
 import numpy as np
 
 
-# @numba.njit
 def brw_reversion_bias(x, alpha1, alpha2, beta, tau):
     """Calculate reversion bias for bounded random walk.
 
@@ -30,8 +28,10 @@ def compute_brw_parameters_with_steepness(r1, r2, a1, a2):
     - a2: (|derivative|) at r2 (positive value)
 
     Args:
-        r1: Offset from zero where bias = +1 (negative for below zero), scalar or 1-D array
-        r2: Offset from zero where bias = -1 (positive for above zero), scalar or 1-D array
+        r1: Offset from zero where bias = +1 (negative for below zero),
+            scalar or 1-D array
+        r2: Offset from zero where bias = -1 (positive for above zero),
+            scalar or 1-D array
         a1: (|derivative|) at r1 (positive value), scalar or 1-D array
         a2: (|derivative|) at r2 (positive value), scalar or 1-D array
 
@@ -65,7 +65,6 @@ def compute_brw_parameters_with_steepness(r1, r2, a1, a2):
     return alpha1, alpha2, beta
 
 
-# @numba.njit
 def simulate_brw(e, sd_e, xkm1, alpha1, alpha2, beta, tau, phi):
     """
     Simulate multiple bounded random walks (vectorized).
@@ -225,7 +224,6 @@ def sample_bounded_random_walk(
     return p.squeeze()
 
 
-# @numba.njit
 def simulate_brw_irregular(
     e, t_eval, sd_e, xkm1, alpha1, alpha2, beta, tau, phi
 ):
@@ -418,7 +416,7 @@ if __name__ == "__main__":
         compute_brw_parameters_with_steepness(r1, r2, a1_high, a2_high)
     )
 
-    print(f"Common parameters:")
+    print("Common parameters:")
     print(f"  r1 = {r1}, r2 = {r2}, y_nop = {y_nop}")
     print(f"  sd_e = {sd_e}")
 
@@ -569,13 +567,13 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.show()
 
-    print(f"\nLow sample statistics:")
+    print("\nLow sample statistics:")
     print(f"  Mean: {np.mean(samples_low):.4f}")
     print(f"  Std: {np.std(samples_low):.4f}")
     print(f"  Min: {np.min(samples_low):.4f}")
     print(f"  Max: {np.max(samples_low):.4f}")
 
-    print(f"\nHigh sample statistics:")
+    print("\nHigh sample statistics:")
     print(f"  Mean: {np.mean(samples_high):.4f}")
     print(f"  Std: {np.std(samples_high):.4f}")
     print(f"  Min: {np.min(samples_high):.4f}")
