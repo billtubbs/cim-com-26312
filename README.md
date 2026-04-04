@@ -28,18 +28,18 @@ limit the ability to reject or attenuate disturbances in ore properties.
 
 ### [`buffer-tanks.ipynb`](buffer-tanks.ipynb) — Section 2: Buffer Tanks
 
-Develops the theory and simulations for buffer (mixed) tanks used to smooth disturbances
-in feed stream properties.
+Develops the theory and simulations for mixed buffer tanks used to smooth disturbances
+in feed rate and material properties.
 
 - **Model** — transfer function for a single buffer tank and tanks in series; frequency
   response analysis (§2.3)
-- **Mixed Tank Example** — worked example of a single mixed tank
 - **Smoothing Quality Disturbances** — smoothing composition variations using a buffer
   tank (§2.2)
-- **Mixed Tank Simulation** — simulation with bounded random walk disturbances
+- **Generate Bounded Random Walk (BRW) Sequences** — generates stochastic feed rate sequence
+- **Mixed Tank Simulation** — simulation of a single tank with BRW disturbance
 - **Smoothing Flow Rate Disturbances** — surge tank model for smoothing flow rate
   variations (§2.1)
-- **Surge Tank Simulation** — simulation with bounded random walk disturbances
+- **Surge Tank Simulation** — simulation of a single tank with BRW disturbance
 - **Design and Sizing** — frequency response and sizing considerations (§2.4)
 - **Demonstration: Simulating a First Order System in Discrete Time Intervals** —
   discrete-time simulation of a first-order system, illustrating buffer tank dynamics
