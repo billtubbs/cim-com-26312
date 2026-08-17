@@ -74,6 +74,6 @@ Then select the `.venv` kernel in VS Code or Jupyter to run the notebooks.
 ## References
 
 1. Faanes A, Skogestad S (2000) A systematic approach to the design of buffer tanks. *Comput Chem Eng* 24(2–7):1395–1401. https://doi.org/10.1016/S0098-1354(00)80007-1
-2. Ray MS (1996) Review of: *Process Control Systems: Application, Design, and Tuning* (4th edn), F.G. Shinskey, McGraw-Hill Inc. 440 p.
+2. Process Control Systems: Application, Design, and Tuning (4th edn), F.G. Shinskey, McGraw-Hill Inc. 440 pages.
 3. Nicolau J (2002) Stationary processes that look like random walks—The bounded random walk process in discrete and continuous time. *Econ Theory* 18(1):99–118.
 4. Skogestad S (2026) Ratio control: Theoretical basis and practical implementation. *J Proc Cont* 60:103675. https://doi.org/10.1016/j.jprocont.2026.103675
